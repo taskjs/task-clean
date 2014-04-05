@@ -9,7 +9,9 @@ function errorHandler(err){
 
 (new Clean).run(
     ['./test/fixtures/foo.js'], // inputs
-    {}, // options
+    {
+        pipe: true
+    }, // options
     console // logger
 ).then(function(inputs){
     assert.equal(inputs[0], './test/fixtures/foo.js');
