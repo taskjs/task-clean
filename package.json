@@ -1,0 +1,32 @@
+{
+  "name": "task-clean",
+  "version": "0.1.0",
+  "main": "lib/clean.js",
+  "description": "Clean files and folders.",
+  "homepage": "https://github.com/taskjs/task-clean",
+  "bugs": "https://github.com/taskjs/task-clean/issues",
+  "author": {
+    "name": "Yuanyan Cao",
+    "email": "yuanyan.cao@gmail.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/taskjs/task-clean"
+  },
+  "licenses": [
+    {
+      "type": "MIT"
+    }
+  ],
+  "keywords":[
+    "task",
+    "clean"
+  ],
+  "dependencies": {
+    "execution": "^0.1.1",
+    "rimraf": "^2.2.6"
+  },
+  "scripts": {
+    "test": "node test/clean_test"
+  }
+}
