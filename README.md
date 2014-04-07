@@ -16,7 +16,7 @@ clean.run(inputs, options, logger)
 Type: `boolean`
 Default: 'false'
 
-If delete CWD or outside CWD enabled.
+Whether delete CWD or outside CWD enabled.
 
 ## Release History
 * 2014-04-06    0.1.0    Initial release.
