@@ -1,6 +1,7 @@
 'use strict';
 
 var assert = require('assert');
+var path = require('path');
 var Clean = require('../lib/clean');
 
 function errorHandler(err){
@@ -8,13 +9,11 @@ function errorHandler(err){
 }
 
 (new Clean).run(
-    ['./test/fixtures/foo.js'], // inputs
-    {
-        pipe: true
-    }, // options
+    [ {path: path.join(__dirname, './fixtures/foo.js')} ], // inputs
+    {}, // options
     console // logger
 ).then(function(inputs){
-    assert.equal(inputs[0], './test/fixtures/foo.js');
+    assert.equal(inputs[0].path, path.join(__dirname, './fixtures/foo.js'));
 }).catch(errorHandler);
 
 (new Clean).run(
